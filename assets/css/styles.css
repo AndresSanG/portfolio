@@ -8,20 +8,26 @@
     color: teal;
     justify-content: right;
     /* background-color: #fff; */
+    padding: 2rem;
+    align-items: center;
+    /* margin: auto; */
 }
 .fixed nav {
-    width: 75%;
+    width: 50%;
 }
 .fixed nav ul {
     display: flex;
     justify-content: space-around;
+    /* padding: 30px; */
+
     
 }
 .fixed nav ul li {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .fixed div {
-    width: 25%;
+    width: 50%;
+    /* padding: 30px; */
 }
 .fixed div a img {
     height: 80px;
@@ -34,7 +40,6 @@
     background-size: cover;
     color: whitesmoke;
     display: flex;
-    z-index: -2;
 }
 .main-section h2 {
     font-family: 'Montserrat', sans-serif;
@@ -46,9 +51,12 @@
 }
 .div-title {
     width: 50%;
+    padding: 2rem;
 }
 .div-title p {
     font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 .flor img {
     height: 400px;
