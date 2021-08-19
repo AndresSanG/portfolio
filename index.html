@@ -1,39 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-</head>
-<body>
-    <div class="cont-burger">
-        <div class="burger">
-            <div class="linea-burger"></div>
-            <div class="linea-burger"></div>
-            <div class="linea-burger"></div>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+  </head>
+  <body>
+    <header class="fixed" id="fixed-header">
+      <nav class="container row">
+        <div class="logo col-4">
+          <a href="#"
+            ><img src="./assets/img/logo_gor_white.png" alt="logo"
+          /></a>
         </div>
-    </div>
-        <header class="fixed">
-            <div><a href="#"><img src="./assets/img/logo_gor_white.png" alt="logo"></a></div>
-            <nav>
-                <ul>
-                    <li>Text1</li>
-                    <li>Text2</li>
-                    <li>Text3</li>
-                    <li>Text4</li>
-                    <li>Text5</li>
-                </ul>
-            </nav>
-        </header>
-    <section class="main-section">
-        <div class="div-title">
+        <!-- <i class="fad fa-bars"></i> -->
+        <div class="menu-h col-2 row align-center justify-center">MENU H</div>
+        <ul class="col-6 row justify-arrownd align-center">
+          <li>Text1</li>
+          <li>Text2</li>
+          <li>Text3</li>
+          <li>Text4</li>
+          <li>Text5</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="carrosel">
+      <div class="main-container row" id="main-container">
+        <section class="main-section-1">
+          <div class="div-title container">
+            <h2>
+              Este va Bolt muy <br />
+              grande.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              corporis ea iusto voluptatem ut quidem amet expedita temporibus
+              unde iure voluptas recusandae reprehenderit, quia excepturi
+              molestias quasi! Repudiandae, rem? Laboriosam.
+            </p>
+          </div>
+        </section>
+        <section class="main-section-2">
+          <div class="div-title container">
+            <h2>
+              Este va Bolt muy <br />
+              grande.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              corporis ea iusto voluptatem ut quidem amet expedita temporibus
+              unde iure voluptas recusandae reprehenderit, quia excepturi
+              molestias quasi! Repudiandae, rem? Laboriosam.
+            </p>
+          </div>
+        </section>
+        <!-- <section class="main-section-3">
+        <div class="div-title container">s
         <h2>Este va Bolt muy <br> grande.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corporis ea iusto voluptatem ut quidem amet expedita temporibus unde iure voluptas recusandae reprehenderit, quia excepturi molestias quasi! Repudiandae, rem? Laboriosam.</p>
     </div>
-    </section>
-</body>
+    </section> -->
+      </div>
+      <ul class="flechas">
+        <li class="flecha-left" id="flecha-left">Flecha 1</li>
+        <li class="flecha-right" id="flecha-right">Flecha 2</li>
+      </ul>
+    </div>
+    <div class="abaut row sub-container">
+      <section class="card-1 col-6">
+        <h4>ABAUT ME</h4>
+        <h2>ESTAMOS APRENDO Y CREZCO</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          dolorem rerum unde at magnam? Itaque illum temporibus tempore nam,
+          fuga consectetur sed, dolor omnis, molestiae dolore autem
+          exercitationem nulla voluptatibus?
+        </p>
+      </section>
+      <section class="card-2 col-6">
+        <img src="./assets/img/card-ajolote.jpg" alt="" />
+      </section>
+    </div>
+      <div class="sub-container grid-gen">
+          <div>
+              <h3>GRID</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto placeat enim!</p>
+          </div>
+        <div class="grid">
+          <div class="element1">ELEMENTO1</div>
+          <div class="element2">ELEMENTO2</div>
+          <div class="element3">ELEMENTO3</div>
+          <div class="element4">ELEMENTO4</div>
+          <div class="element5">ELEMENTO5</div>
+          <div class="element6">ELEMENTO6</div>
+          <div class="element7">ELEMENTO7</div>
+        </div>
+    <!-- <div class="row">
+    <div class="grid-container container col-12">
+      <div class="grid">
+        <div class="element1">ELEMENTO1</div>
+        <div class="element2">ELEMENTO2</div>
+        <div class="element3">ELEMENTO3</div>
+        <div class="element4">ELEMENTO4</div>
+      </div>
+    </div>
+    <div class="grid-container container col-12">
+      <div class="grid">
+        <div class="element5">ELEMENTO5</div>
+        <div class="element6">ELEMENTO6</div>
+        <div class="element7">ELEMENTO7</div>
+      </div>
+    </div>
+</div> -->
+    <!-- fin del portafolio -->
+    <script src="./assets/js/scroll.js"></script>
+  </body>
 </html>

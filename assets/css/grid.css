@@ -1,0 +1,61 @@
+.row{
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-arrownd {
+    justify-content: space-around;
+}
+.align-center {
+    align-items: center;
+}
+.diplay-hidden {
+    display: none;
+}
+.visibilty-hidden {
+    visibility: hidden;
+}
+/* GRID */
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-7 {
+    width: 58,33%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-1 {
+    width: 8.33%;
+}
