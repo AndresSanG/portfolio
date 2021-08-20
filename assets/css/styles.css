@@ -10,13 +10,14 @@
     padding-top: 1rem;
 }
 .menu-h {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 .fixed nav ul li {
     font-size: 1.5rem;
 }
 .fixed div {
-    width: 50%;
+    /* width: 50%; */
 }
 .fixed div a img {
     height: 80px;
@@ -194,24 +195,45 @@
     .fixed {
         flex-wrap: wrap;
     }
+    .cont-logo {
+        justify-content: start;
+    }
+    .logo {
+        width: 80% !important;
+        justify-content: start;
+    }
     .menu-h {
-        visibility: visible;
+        /* visibility: visible; */
+        display: flex;
     }
     .menu-h div {
         background-color: tomato;
         justify-content: end;
         border-radius: 50%;
-        height: 5rem;
-        width: 5rem;
+        height: 3rem;
+        width: 3rem;
     }
     .menu-h div i {
-        font-size: 3rem;
-        padding-left: 1.2rem;
+        font-size: 2rem;
+        padding-left: .6rem;
+        text-align: end;
+    }
+    .fixed div a img {
+        height: 60px;
     }
     .fixed nav ul {
+        /* padding-top: 1rem; */
+        /* display: none; */
+        position: fixed;
         flex-direction: column;
-        padding-top: 1rem;
-        display: none;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        background-color: seagreen;
+        color: snow;
+        transform: scaleY(0);
+        transition: all .3s ease;
     }
     .fixed nav ul li {
         width: 100%;
@@ -223,6 +245,9 @@
         justify-content: center;
         width: 50%;
     }
+    /* .despliegue {
+        flex-direction: column;
+    } */
     .main-section-1 h2 {
         margin-top: 0;
     }

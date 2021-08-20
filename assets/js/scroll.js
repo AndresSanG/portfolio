@@ -2,7 +2,8 @@ const header = document.getElementById("fixed-header");
 const mainContainer = document.getElementById("main-container");
 const flechaLeft = document.getElementById("flecha-left");
 const flechaRight = document.getElementById("flecha-right");
-
+const menuH = document.getElementById("menu-h");
+const despliegueH = document.getElementById("despliegue");
 
 function scrollHeadTop(){
     if(window.scrollY>500){
@@ -18,19 +19,20 @@ function clicking(){
     }else{
         mainContainer.style.transform="translateX(-50%)";
     }
-    // mainContainer.style.transform="translateX(-50%)"
-    // mainContainer.style.transform="translateX(-50%)"
 }
-// function clickRight(){
-//     if (mainContainer.style.transform===0){
-//         mainContainer.style.transform="translateX(-50%)";
-//     }else{
-//         mainContainer.style.transform="translateX(0%)";
-//     }
-// }
 
+let flag = false;
+function rendMenu(){
+    if (flag){
+        despliegueH.style.transform = "scaleY(0)";
+    }else{
+        despliegueH.style.transform ="scaleY(1)";
+    }
+    flag=!flag;
 
+}
 
 document.addEventListener("scroll", scrollHeadTop);
-flechaLeft.addEventListener("click",clicking)
-flechaRight.addEventListener("click",clicking)
+flechaLeft.addEventListener("click",clicking);
+flechaRight.addEventListener("click",clicking);
+menuH.onclick = rendMenu;
