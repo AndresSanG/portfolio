@@ -4,6 +4,10 @@ const flechaLeft = document.getElementById("flecha-left");
 const flechaRight = document.getElementById("flecha-right");
 const menuH = document.getElementById("menu-h");
 const despliegueH = document.getElementById("despliegue");
+const aboutG = document.getElementById("about");
+const aboutB = document.getElementById("about-b");
+const gridB = document.getElementById("grid-b");
+const gridG = document.getElementById("grid-container");
 
 function scrollHeadTop(){
     if(window.scrollY>500){
@@ -29,10 +33,21 @@ function rendMenu(){
         despliegueH.style.transform ="scaleY(1)";
     }
     flag=!flag;
+}
 
+function offsetAbout(){
+    let offAbout = aboutG.offsetTop-50;
+    window.scrollTo(0,offAbout);
+}
+
+function offsetGrid(){
+    let offGrid = gridG.offsetTop-50;
+    window.scrollTo(0,offGrid);
 }
 
 document.addEventListener("scroll", scrollHeadTop);
 flechaLeft.addEventListener("click",clicking);
 flechaRight.addEventListener("click",clicking);
 menuH.onclick = rendMenu;
+aboutB.onclick =offsetAbout;
+gridB.onclick = offsetGrid;

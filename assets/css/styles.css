@@ -116,7 +116,7 @@
     transition: .5s all ease;
 }
 
-.abaut {
+.about {
     margin-bottom: 200px; 
 }
 .card-1 {
@@ -222,7 +222,7 @@
         height: 60px;
     }
     .fixed nav ul {
-        /* padding-top: 1rem; */
+        padding-top: 1rem;
         /* display: none; */
         position: fixed;
         flex-direction: column;
@@ -254,10 +254,10 @@
     .main-section-2 h2 {
         margin-top: 0;
     }
-    .abaut {
+    .about {
         flex-direction: column;
     }
-    .abaut section {
+    .about section {
         width: 100%;
     }
     .card-1{
