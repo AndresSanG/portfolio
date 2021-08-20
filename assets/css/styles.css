@@ -112,7 +112,7 @@
     padding-bottom: 1rem;
 }
 .white-back {
-    background-color: grey;
+    background-color: maroon;
     transition: .5s all ease;
 }
 
@@ -184,6 +184,22 @@
 .element7 {
     /* background-color: red; */
 }
+.container-form {
+    background-color: rgb(48, 41, 41);
+    color: blanchedalmond;
+    padding: 2 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-form {
+    background-color: rgb(38, 38, 41);
+}
+.contact-info {
+    background-color: black;
+}
+/* .title-form {
+
+} */
 /* MEDIA RESPONSIVE */
 @media (max-width: 900px) {
     .main-section {

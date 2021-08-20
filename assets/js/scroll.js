@@ -8,6 +8,8 @@ const aboutG = document.getElementById("about");
 const aboutB = document.getElementById("about-b");
 const gridB = document.getElementById("grid-b");
 const gridG = document.getElementById("grid-container");
+const formB = document.getElementById("contact-b");
+const formG = document.getElementById("form-g");
 
 function scrollHeadTop(){
     if(window.scrollY>500){
@@ -45,9 +47,15 @@ function offsetGrid(){
     window.scrollTo(0,offGrid);
 }
 
+function offsetContact(){
+    let offcontact = formG.offsetTop-70;
+    window.scrollTo(0,offcontact);
+}
+
 document.addEventListener("scroll", scrollHeadTop);
 flechaLeft.addEventListener("click",clicking);
 flechaRight.addEventListener("click",clicking);
 menuH.onclick = rendMenu;
 aboutB.onclick =offsetAbout;
 gridB.onclick = offsetGrid;
+formB.onclick = offsetContact;
