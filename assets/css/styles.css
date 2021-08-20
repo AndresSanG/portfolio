@@ -4,7 +4,7 @@
     width:100%;
     position: fixed;
     background-color: transparent;
-    color: teal;
+    color: #E63E6D;
     z-index: 2;
     transition: .5s all ease;
     padding-top: 1rem;
@@ -207,7 +207,7 @@
         display: flex;
     }
     .menu-h div {
-        background-color: tomato;
+        background-color: #7D1935;
         justify-content: end;
         border-radius: 50%;
         height: 3rem;
@@ -230,7 +230,7 @@
         left: 0;
         width: 100%;
         z-index: 5;
-        background-color: seagreen;
+        background-color: #B42B51;
         color: snow;
         transform: scaleY(0);
         transition: all .3s ease;
